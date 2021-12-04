@@ -7,7 +7,19 @@ services:
     volumes:
       - ./app/:/usr/src/app/
     ports:
-      - 8000:8000
+      - 80:8000
     env_file:
       - ./.env.dev
 
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dheeraj
+      - POSTGRES_PASSWORD=kuki@2018
+      - POSTGRES_DB=safeex
+
+
+volumes:
+  postgres_data:
