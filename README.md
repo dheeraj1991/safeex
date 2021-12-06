@@ -47,5 +47,9 @@ When running on production environment, the application will be served using gui
 ### Dashboard Page
 ![Dashboard Page](https://i.ibb.co/Xkw5vPZ/dashboard.png "Dashboard Page")
 
+## Reference and Credits
+Moon phase calculation : https://www.subsystems.us/uploads/9/8/9/4/98948044/moonphase.pdf
+Free Bootstrap Theme : https://startbootstrap.com/theme/sb-admin-2
+Moon Phases : https://www.almanac.com/astronomy/moon/calendar
 
 Happy Hacking !!!
