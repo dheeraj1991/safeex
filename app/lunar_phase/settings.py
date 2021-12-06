@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dashboard'
 ]
 
 MIDDLEWARE = [
@@ -129,7 +130,6 @@ STATICFILES_DIRS = [
 ]
 
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -137,4 +137,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = '/lunar-phase'
+LOGIN_REDIRECT_URL = '/dashboard'
+LOGOUT_REDIRECT_URL = '/login'
