@@ -44,19 +44,19 @@ def moon_data(request):
     if number_of_days_into_moon_cycle == 0 or number_of_days_into_moon_cycle == 29.53:
         moon_stage = "New"
     elif 0 < number_of_days_into_moon_cycle < 7:
-        moon_stage = "Waning Crescent"
+        moon_stage = "Waxing Crescent"
     elif number_of_days_into_moon_cycle == 7:
-        moon_stage = "Third Quarter"
+        moon_stage = "First Quarter"
     elif 7 < number_of_days_into_moon_cycle < 15:
-        moon_stage = "Waning Gibbous"
+        moon_stage = "Waxing Gibbous"
     elif number_of_days_into_moon_cycle == 15:
         moon_stage = "Full"
     elif 15 < number_of_days_into_moon_cycle < 22:
-        moon_stage = "Waxing Gibbous"
+        moon_stage = "Waning Gibbous"
     elif number_of_days_into_moon_cycle == 7:
-        moon_stage = "First Quarter"
+        moon_stage = "Last Quarter"
     elif 22 < number_of_days_into_moon_cycle < 29.53:
-        moon_stage = "Waxing Crescent"
+        moon_stage = "Waning Crescent"
 
     percentage_of_moon_cycle = round((number_of_days_into_moon_cycle / 29.53) * 100, 2)
 
