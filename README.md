@@ -42,10 +42,10 @@ When running on production environment, the application will be served using gui
 
 ## Sample Images
 ### Login Page
-![Login Page](https://ibb.co/xSF7TJC "Login Page")
+![Login Page](https://i.ibb.co/C5PHGh1/login.png "Login Page")
 
 ### Dashboard Page
-![Dashboard Page](https://ibb.co/zHk20gh "Dashboard Page")
+![Dashboard Page](https://i.ibb.co/Xkw5vPZ/dashboard.png "Dashboard Page")
 
 
 Happy Hacking !!!
