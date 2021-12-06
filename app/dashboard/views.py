@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 
+from datetime import date
 from django.shortcuts import render
 from django.http import JsonResponse, Http404
 from lunar_phase.custom_decorator import logged_in_or_basicauth
@@ -25,9 +26,11 @@ def moon_data(request):
         taken from the browser hence the data will be always user timezone set on the browser
         The api calcualtes considering that On 1/6/2000 at 12:24:01, the moon was New.
     """
-    Y = int(request.GET.get('year'))
-    M = int(request.GET.get('month'))
-    D = int(request.GET.get('day'))
+    today = date.today()
+
+    Y = int(request.GET.get('year', today.strftime("%Y")))
+    M = int(request.GET.get('month', today.strftime("%m")))
+    D = int(request.GET.get('day', today.strftime("%d")))
     if M in [1, 2]:
         Y -= 1
         M += 12
