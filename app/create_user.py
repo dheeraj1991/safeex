@@ -13,4 +13,3 @@ if created:
     user.set_password('testpass123')
     user.save()
     print("Basic User Created")
-
